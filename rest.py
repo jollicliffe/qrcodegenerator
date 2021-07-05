@@ -2,7 +2,6 @@ from flask import Flask, json, request, render_template
 import cv2
 from cvtest import memegen
 
-#companies = [{"id": 1, "name": "Company One"}, {"id": 2, "name": "Company Two"}]
 
 
 api = Flask(__name__)
