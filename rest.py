@@ -12,10 +12,11 @@ def home():
 
 
 @api.route('/images', methods=['GET'])
-def get_companies():
+def imageapi():
     image = 'static/new.png'
-    text = request.args.get('text')
-    newImage = memegen(image, text)
+    serial = request.args.get('serial')
+    model = request.args.get('model')
+    newImage = memegen(image, serial, model)
     return '<img src="{}" />'.format(image)
     
 
